@@ -1,0 +1,54 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mcu8.mplabx.project.avr64dd32-light-usart-driver-mplab",
+        "version": " ",
+        "displayName": "",
+        "projectName": "avr64dd32-light-usart-driver-mplab",
+        "shortDescription": "Create a lightweight USART driver in bare metal for the AVR64DD32 device family.",
+        "ide": {
+            "name": "MPLAB X",
+            "semverRange": ">=6.0.0"
+        },
+        "compiler": [
+            {
+                "name": "XC8",
+                "semverRange": "^2.40.0"
+            }
+        ],
+        "dfp": {
+            "name": "",
+            "semverRange": ""
+        },
+        "configurator": {
+            "name": "",
+            "semverRange": ""
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": "AVR64DD32",
+                "versionRange": "*"
+            }
+        },
+        "author": "Robert Perkel",
+        "peripherals": [],
+        "keywords": [],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}

@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.avr64dd32-light-usart-driver-mplab",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Lightweight USART Driver for AVR64DD32",
         "projectName": "avr64dd32-light-usart-driver-mplab",
         "shortDescription": "Create a lightweight USART driver in bare metal for the AVR64DD32 device family.",
         "ide": {
@@ -19,12 +19,8 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
-        },
-        "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Dx_DFP",
+            "semverRange": "^2.1.152"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -37,8 +33,8 @@
             }
         },
         "author": "Robert Perkel",
-        "peripherals": [],
-        "keywords": [],
+        "peripherals": [ "USART" ],
+        "keywords": ["Bare Metal", "UART"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",

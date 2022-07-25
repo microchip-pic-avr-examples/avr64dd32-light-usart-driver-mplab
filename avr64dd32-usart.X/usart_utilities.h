@@ -21,7 +21,7 @@
 #ifndef USART_UTILITIES_H
 #define	USART_UTILITIES_H
 
-#include "USART0.h"
+#include "usart0.h"
 
 #ifdef	__cplusplus
 extern "C" {

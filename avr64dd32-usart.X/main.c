@@ -21,7 +21,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#include "USART0.h"
+#include "usart0.h"
 #include "ringBuffer.h"
 #include "usart_utilities.h"
 

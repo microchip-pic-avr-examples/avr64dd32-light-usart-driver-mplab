@@ -1,3 +1,23 @@
+/*
+© [2022] Microchip Technology Inc. and its subsidiaries.
+
+    Subject to your compliance with these terms, you may use Microchip 
+    software and any derivatives exclusively with Microchip products. 
+    You are responsible for complying with 3rd party license terms  
+    applicable to your use of 3rd party software (including open source  
+    software) that may accompany Microchip software. SOFTWARE IS ?AS IS.? 
+    NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS 
+    SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT,  
+    MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT 
+    WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, 
+    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY 
+    KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF 
+    MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE 
+    FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP?S 
+    TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
+    EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
+    THIS SOFTWARE.
+*/
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
@@ -32,7 +52,7 @@ void loadCharacterToBuffer(char c)
     ringBuffer_loadCharacter(&ringBuffer, c);
 }
 
-//LED Functions
+//LED GPIO Functions
 #define LED_init() do { PORTF.OUTSET = PIN5_bm; PORTF.DIRSET = PIN5_bm; } while (0)
 #define LED_turnOn() do { PORTF.OUTCLR = PIN5_bm; } while (0)
 #define LED_turnOff() do { PORTF.OUTSET = PIN5_bm; } while (0)
@@ -65,6 +85,8 @@ int main(void) {
     sei();
     
     while (1) {
+        
+        //Look for the Deliminator
         if (ringBuffer_find(&ringBuffer, "\r\n"))
         {
             //We may have received a command
@@ -73,9 +95,9 @@ int main(void) {
             //The "\r\n" sequence at the end ensures an exact match
             if (ringBuffer_find(&ringBuffer, "HELP\r\n"))
             {
-                USART_sendString("Type HELP, LED ON, LED BLINK, or LED OFF followed by ENTER\r\n");
+                USART_sendString("Type HELP, LED ON, LED TOGGLE, or LED OFF followed by ENTER\r\n");
             }
-            if (ringBuffer_find(&ringBuffer, "LED ON\r\n"))
+            else if (ringBuffer_find(&ringBuffer, "LED ON\r\n"))
             {
                 USART_sendString("LED turned on\r\n");
                 LED_turnOn();
@@ -95,7 +117,7 @@ int main(void) {
                 USART_sendString("Invalid Command Received\r\n");
             }
             
-            //Advance to end of the new line
+            //Advance the buffer to the newline character
             ringBuffer_advanceToString(&ringBuffer, "\r\n");
         }
     }

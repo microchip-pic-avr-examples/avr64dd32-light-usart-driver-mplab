@@ -44,25 +44,25 @@ This example creates a lightweight USART (Universal Serial Asynchronous Receiver
 ![DV Icon](./images/DV_icon.PNG)
 2. Select the COM port of the Curiosity Nano, but do not connect to it. (COM port may vary)  
 
-![COM Port Selected](./images/selectedCOM.PNG)
+![COM Port Selected](./images/selectedCOM.PNG)  
 3. Change the UART Settings to the following:
   - Baud: 115,200  
   - Char Length: 8 bits  
   - Parity: None  
   - Stop Bits: 1 bit  
 
-![COM Settings](./images/COMsettings.PNG)  
+![COM Settings](./images/COMsettings.PNG)   
 4. Connect to the COM Port
 
 ![COM Port Connected](./images/COMconnected.PNG)  
 
 5. Assign the COM port to the serial terminal
 
-![Terminal Settings](./images/terminalSettings.PNG)
+![Terminal Settings](./images/terminalSettings.PNG)  
 
 6. If the device is already programmed, no text will display. The command "HELP" can be used to show the instructions again. (If not programmed at this point, program the device.)  
 
-![Terminal Output](./images/terminalOutput.PNG)
+![Terminal Output](./images/terminalOutput.PNG)  
 
 ## Operation
 

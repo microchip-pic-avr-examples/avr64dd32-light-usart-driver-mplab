@@ -41,7 +41,7 @@ This example creates a lightweight USART (Universal Serial Asynchronous Receiver
 
 1. Press the Data Visualizer Icon in the MPLAB X toolbar
 
-![DV Icon](./images/DV_icon.PNG)
+![DV Icon](./images/DV_icon.PNG)  
 2. Select the COM port of the Curiosity Nano, but do not connect to it. (COM port may vary)  
 
 ![COM Port Selected](./images/selectedCOM.PNG)  

@@ -9,17 +9,19 @@ This example creates a lightweight USART (Universal Serial Asynchronous Receiver
 ## Related Documentation
 
 - [Window Security Sensor with an AVR® DB Microcontroller, MLX90632 and MLX90392](https://github.com/microchip-pic-avr-examples/avr128db28-smart-security-sensor-mplab)
-  - USART API was developed as part of this project. This program also shows more complex use of the ring buffer for parsing Bluetooth messages.
+  - The Windows Security Sensor project linked above uses this Lightweight USART Driver and demonstrates how to handle the more complex task of parsing Bluetooth messages using the ring buffer.
+- [AVR64DD32 Product Page](https://www.microchip.com/en-us/product/AVR64DD32?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_avrdd&utm_content=avr64dd32-light-usart-driver-mplab-github)
+- [AVR DD MCU Family Homepage](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus/avr-dd?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_avrdd&utm_content=avr64dd32-light-usart-driver-mplab-github)
 
 ## Software Used
 
-- [MPLAB® X IDE 6.0.0 or newer](#)
-- [MPLAB® XC8 2.40.0 or newer compiler](#)
-- [MPLAB Data Visualizer](#) or other serial terminal
+- [MPLAB® X IDE 6.0.0 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_avrdd&utm_content=avr64dd32-light-usart-driver-mplab-github)
+- [MPLAB XC8 2.40.0 or newer compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_avrdd&utm_content=avr64dd32-light-usart-driver-mplab-github)
+- [MPLAB Data Visualizer](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_avrdd&utm_content=avr64dd32-light-usart-driver-mplab-github) or other serial terminal
 
 ## Hardware Used
 
-- [AVR64DD32 Curiosity Nano Evaluation Kit (???)](#)
+- [AVR64DD32 Curiosity Nano Evaluation Kit (EV72Y42A)](https://www.microchip.com/en-us/development-tool/EV72Y42A?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_avrdd&utm_content=avr64dd32-light-usart-driver-mplab-github)
 
 ## Setup
 
